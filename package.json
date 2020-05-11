@@ -1,0 +1,40 @@
+{
+    "name": "serenity-app",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && npm start",
+        "socket-server": "cd socket_server && nodemon server.js",
+        "express-server": "nodemon express-server.js",
+        "dev": "concurrently --kill-others-on-fail \"npm run express-server\" \"npm run client\" \"npm run socket-server\""
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.9.13",
+        "axios": "^0.19.2",
+        "body-parser": "^1.19.0",
+        "bootstrap": "^4.4.1",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "filepond": "^4.13.5",
+        "filepond-plugin-image-exif-orientation": "^1.0.8",
+        "filepond-plugin-image-preview": "^4.6.2",
+        "fs": "0.0.1-security",
+        "mongodb": "^3.5.7",
+        "mongoose": "^5.9.13",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.2",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.1",
+        "react-dom": "^16.13.1",
+        "react-filepond": "^7.0.1",
+        "react-redux": "^7.2.0",
+        "react-router": "^5.1.2",
+        "react-router-dom": "^5.1.2",
+        "reactstrap": "^8.4.1",
+        "redux": "^4.0.5",
+        "ws": "^7.2.5",
+        "yarn": "^1.22.4"
+    },
+    "devDependencies": {
+        "concurrently": "^4.0.1"
+    }
+}

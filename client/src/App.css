@@ -1,0 +1,49 @@
+body > #root > div {
+  height: 100vh;
+}
+
+.loginpage{
+  text-align: center;
+  color: white;
+  background-color:#48C9B0;
+  height: 100vh;
+  padding-top: 15%;
+  font-size: 25px;
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.navigationbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(50, 201, 151);
+  color: white;
+}
+
+.navlinks {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 20px;
+  font-size: 3vh;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homecontainer{
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
