@@ -7,11 +7,13 @@ class Nav extends Component {
 
 render() {
     return (
-        <nav className = "navigationbar">
-            <h3>{this.props.username}</h3>
+        <nav className="navigationbar">
+             <Link to="/" style={{ textDecoration: 'none' }}>
+                <h2>{this.props.username}</h2>
+             </Link>
             <ul className="navlinks">
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                    <li>HomePage</li>
+                <Link to="/community" style={{ textDecoration: 'none' }}>
+                    <li>Community</li>
                 </Link>
                 <Link to="/chatroom" style={{ textDecoration: 'none' }}>
                     <li>ChatRoom</li>

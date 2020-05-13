@@ -1,9 +1,10 @@
 import '../../src/App.css';
 import Nav from './Nav';
-import HomePage from './HomePage';
+import CommunityPage from './CommunityPage';
 import LoginPage from './LoginPage';
 import ChatRoom from './ChatRoom';
 import ExercisePlanPage from './ExercisePlanPage';
+import HomePage from './HomePage';
 import {BrowserRouter as Router, Switch, Route, Redirect, BrowserRouter} from 'react-router-dom';
 import React from 'react';
 
@@ -25,6 +26,7 @@ class App extends React.Component {
             <div>
               <Switch>
                 <Route exact path="/" component={HomePage} />
+                <Route exact path="/community" component={CommunityPage} />
                 <Route exact path="/chatroom" render={(props) => <ChatRoom {...props} username={this.state.username} />} />
                 <Route exact path="/exerciseplanpage" component={ExercisePlanPage} />
               </Switch>

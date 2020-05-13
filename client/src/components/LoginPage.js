@@ -2,7 +2,7 @@ import {
     Container, Col, Form,
     FormGroup, Label, Input,
     Button,
-  } from 'reactstrap';
+  } from 'reactstrap'
   
   import { store, setUser } from '../index.redux.jsx';
   import React from 'react';
